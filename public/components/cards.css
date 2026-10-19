@@ -7,9 +7,18 @@
     grid-template-columns: repeat(3, 1fr);
   }
   .card {
+    border: 1px solid #2c3142;
+    border-left: 3px solid #4a8cff;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgb(30 90 255 / 12%), rgb(30 90 255 / 0%) 60%), #16181d;
+    box-shadow: 0 12px 32px rgb(0 0 0 / 35%);
+    color: #c2c7d3;
+
     header {
       position: inherit;
       z-index: inherit;
+      background: transparent;
+      border-bottom: 1px solid #2c3142;
     }
     header i {
       padding-right: 1rem;
