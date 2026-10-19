@@ -3,23 +3,6 @@ title: Getting Started
 published: true
 ---
 
-<article id="contributors">
-  <header>
-    <h2>Contributors</h2>
-  </header>
-
-  <ul>
-    <li>
-      <img class="icon" src="https://avatars.githubusercontent.com/u/601650"/>
-      <strong class="username">maedi</strong>
-    </li>
-  </ul>
-
-  <footer>
-    <a href="/docs/contributing" role="button"><i class="bi bi-code-square"></i>Contribute</a>
-  </footer>
-</article>
-
 Raindown is a templating layer for static site generation and an annotation framework for Markdown files.
 
 It turns Markdown files into a harness for AI, where input is transformed into output an agent can read before it runs, saving you tokens and increasing human clarity. Markdown files are messy, and now we have structure that helps humans and machines.
