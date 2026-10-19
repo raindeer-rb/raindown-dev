@@ -6,11 +6,14 @@ class HomeNode < LowNode
   def initialize(event:)
     @title = 'A Markdown superset for AI, APIs, Docs... and humans'
     @cards = Raindeer.pages.list(folder: 'cards')
+    @cloud = RainCloud.new.html
   end
 
   def render(event:)
     <{ Layout: title=@title section='section-home' }>
-      <img id="raindown" src="/assets/logo.png"/>
+      <div id="raindown" role="img" aria-label="Raindown">
+        <{ @cloud }>
+      </div>
 
       <div id="overview">
         <p>{"A Markdown superset for AI, APIs, Docs... and humans"}</p>

@@ -4,8 +4,6 @@ class Layout < LowNode
   def render(event:, section:, title:)
     <html>
       <head>
-        <title>{"Raindown"} - {title}</title>
-
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
         <link rel="stylesheet" href="/style.css">
@@ -33,6 +31,7 @@ class Layout < LowNode
         <meta property="og:description" content="A Markdown superset for AI and humans 🌧️" />
         <meta property="og:url" content="https://raindown.dev" />
         <meta property="og:type" content="website" />
+        <title>{"Raindown"} - {title}</title>
       </head>
       <body class="{section}">
         <div id="background"></div>

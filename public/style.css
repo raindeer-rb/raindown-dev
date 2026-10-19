@@ -70,12 +70,8 @@ ul.cons {
   top: 0;
   right: 0;
   left: 0;
-  
-  background-image: 
-    linear-gradient(to bottom, rgba(26, 26, 26, 0) 0%, rgb(19, 22.5, 30.5) 100%),
-    url('/assets/background.png');
 
-  background-repeat: repeat-x;
+  background: linear-gradient(to bottom, rgb(6 7 10) 0%, rgb(19, 22.5, 30.5) 100%);
   height: 770px;
 
   .section-pages & {

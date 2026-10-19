@@ -1,8 +1,23 @@
+/* The rain cloud is block characters, one row per line, each cloud character its own blue. */
 #raindown {
-  display: block;
-  max-width: 350px;
+  width: fit-content;
   margin: 0 auto;
-  padding-bottom: 1rem;
+  padding: 1rem 0 2rem;
+  font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 9px;
+  line-height: 1;
+  user-select: none;
+  @media (min-width: 768px) {
+    font-size: 13px;
+  }
+
+  .row {
+    display: block;
+    white-space: pre;
+    color: hsl(212 100% var(--light));
+    opacity: var(--opacity, 1);
+    text-shadow: -2px 0 rgb(30 90 255 / 60%), 2px 0 rgb(140 210 255 / 45%);
+  }
 }
 
 #overview {
