@@ -35,7 +35,11 @@ class HomeNode < LowNode
 
       <section id="examples">
         <h2>{"Examples"}</h2>
-        <p class="lead">{"The same example, as a Markdown file and as a Raindown file."}</p>
+
+        <p class="lead">
+          {"Use the antlers syntax in Markdown or the bare syntax in Raindown."}<br />
+          {"Optionally use the bare syntax in Markdown with"} <code>raindown --bare</code>
+        </p>
 
         <div class="pages">
           <{ for: example in: @examples }>
