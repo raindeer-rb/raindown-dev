@@ -1,4 +1,4 @@
 # frozen_string_literal: true
 
 require 'bundler/setup'
-require 'raindown/boot'
+require 'raindeer/boot'

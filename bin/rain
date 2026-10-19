@@ -4,6 +4,6 @@
 # Call "bin/rain" to load gems locally from your Gemfile in dev.
 
 require 'bundler/setup'
-require 'raindown/cli'
+require 'raindeer/cli'
 
 Rain::CLI.run(ARGV)
