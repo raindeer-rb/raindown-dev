@@ -4,11 +4,12 @@ class HomeNode < LowNode
   observe '/'
 
   def initialize(event:)
+    @title = 'A Markdown superset for AI, APIs, Docs... and humans'
     @cards = Raindeer.pages.list(folder: 'cards')
   end
 
   def render(event:)
-    <{ Layout: section='section-home' }>
+    <{ Layout: title=@title section='section-home' }>
       <img id="raindown" src="/assets/logo.png"/>
 
       <div id="overview">

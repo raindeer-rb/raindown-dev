@@ -13,7 +13,7 @@ class PageRenderer < LowNode
 
   def render
     <{ if: @published }>
-      <{ Layout: section='section-pages' }>
+      <{ Layout: title=@title section='section-pages' }>
         <{ Sidebar }>
 
         <div id="content">

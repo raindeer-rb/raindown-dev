@@ -1,9 +1,11 @@
 # frozen_string_literal: true
 
 class Layout < LowNode
-  def render(event:, section:)
+  def render(event:, section:, title:)
     <html>
       <head>
+        <title>{"Raindown"} - {title}</title>
+
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
         <link rel="stylesheet" href="/style.css">
