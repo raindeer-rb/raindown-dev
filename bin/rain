@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+# Call "rain" to use the CLI on your $PATH installed by Bundler.
+# Call "bin/rain" to load gems locally from your Gemfile in dev.
+
+require 'bundler/setup'
+require 'raindown/cli'
+
+Rain::CLI.run(ARGV)

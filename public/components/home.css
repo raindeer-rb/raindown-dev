@@ -1,0 +1,72 @@
+#raindown {
+  display: block;
+  max-width: 350px;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+#overview {
+  padding-bottom: 2rem;
+
+  .actions {
+    display: block;
+    margin-top: 1.5rem;
+  }
+  p {
+    font-size: 1.25rem;
+    text-align: center;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+  }
+  ul#releases {
+    margin: 1rem 0 0 0;
+    padding-left: 0;
+    text-align: center;
+    li {
+      color: #aaa;
+      font-size: 0.75rem;
+      display: inline-block;
+      list-style: none;
+    }
+    li + li::before {
+      content: ' | ';
+    }
+  }
+}
+
+.teaser {
+  display: flex;
+  align-items: center;
+  margin: 2rem auto;
+  max-width: 800px;
+  border-top: 1px solid #353841;
+  border-bottom: 1px solid #353841;
+  img {
+    padding: 1rem;
+    max-width: 150px;
+    @media (min-width: 768px) {
+      max-width: 300px;
+    }
+  }
+  .content {
+    padding: 1rem;
+    h2 {
+      font-size: 1.3rem;
+    }
+    p {
+      font-size: 1.25rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+#pros-cons {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}

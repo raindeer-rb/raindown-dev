@@ -1,0 +1,16 @@
+# Framework.
+/build
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+.rspec_status
+
+# OS.
+.DS_Store
+
+# Libraries.
+/.bundle/
+/.yardoc
+/_yardoc/

@@ -1,0 +1,171 @@
+/***** TYPOGRAPHY *****/
+
+:root {
+  --pico-font-size: 1rem;
+  --pico-accordion-open-summary-color: #fff;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/***** TYPOGRAPHY *****/
+
+h1 {
+  margin-bottom: calc(var(--pico-typography-spacing-vertical) * 2);
+}
+
+article header {
+  h2,
+  h3 {
+    margin-bottom: 0;
+  }
+}
+
+img + *,
+.markdown-alert + * {
+  margin-top: 1rem;
+}
+
+button i,
+a i {
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+ul.icons {
+  li {
+    padding-left: 0.75rem;
+  }
+}
+ul.pros {
+  li::marker {
+    content: '✅';
+    font-size: 1.25rem;
+  }
+}
+ul.cons {
+  li::marker {
+    content: '❌';
+    font-size: 1.25rem;
+  }
+}
+
+/***** LAYOUT *****/
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+#background {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+  
+  background-image: 
+    linear-gradient(to bottom, rgba(26, 26, 26, 0) 0%, rgb(19, 22.5, 30.5) 100%),
+    url('/assets/background.png');
+
+  background-repeat: repeat-x;
+  height: 770px;
+
+  .section-pages & {
+    height: 175px;
+  }
+}
+
+header, main, footer {
+  position: relative;
+  z-index: 2;
+}
+
+header {
+  background-color: #000;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    padding: 1rem;
+  }
+
+  #favicon,
+  #favicon img {
+    height: 100%;
+  }
+
+  a#logo {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+  }
+
+  #main-menu {
+    li {
+      a {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 1rem;
+      }
+    }
+  }
+}
+
+main {
+  overflow: visible;
+  padding: 1rem;
+
+  .section-pages & {
+    margin-top: 50px;
+  }
+
+  #content {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+footer {
+  margin-top: 2rem;
+  border-top: 1px solid #000;
+  ul {
+    display: flex;
+    justify-content: center;
+    li {
+      margin-left: 2rem;
+    }
+  }
+}
+
+/***** COMPONENTS *****/
+
+.slogan {
+  margin-bottom: var(--pico-block-spacing-vertical);
+  padding: var(--pico-block-spacing-vertical) 0;
+  border: 5px solid violet;
+  border-left-width: 0;
+  border-right-width: 0;
+
+  color: violet;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 2.25rem;
+}
+
+.highlight {
+  border-radius: 10px;
+}

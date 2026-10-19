@@ -1,0 +1,55 @@
+#content:has(#contributors) {
+  @media (min-width: 1024px) {
+    padding-right: 220px;
+  }
+  @media (min-width: 1280px) {
+    padding-right: 270px;
+  }
+}
+
+#contributors {
+  overflow: hidden;
+  padding: 1rem;
+  font-size: 0.9rem;
+  border: 1px solid #353841;
+  border-radius: 10px;
+  margin-top: 1rem;
+
+  @media (max-width: 1023px) {
+    /* Place below content on mobile. */
+    order: 1;
+    margin-top: 2rem;
+  }
+  @media (min-width: 1024px) {
+    position: absolute;
+    right: 0;
+    width: 200px;
+  }
+  @media (min-width: 1280px) {
+    width: 250px;
+    display: block;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  ul {
+    padding-left: 0;
+    li {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      .icon {
+        width: 50px;
+        border-radius: 25px;
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  footer {
+    text-align: center;
+  }
+}

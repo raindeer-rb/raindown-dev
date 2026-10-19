@@ -1,0 +1,30 @@
+aside#sidebar {
+  padding: 1rem;
+
+  @media (min-width: 768px) {
+    width: 14rem;
+    float: left;
+  }
+
+  nav {
+    ul:first-of-type {
+      margin-left: 0; /* Override Pico. */
+    }
+    li {
+      padding: calc(var(--pico-nav-element-spacing-vertical) * .25) var(--pico-nav-element-spacing-horizontal);
+      padding-left: calc(var(--pico-nav-element-spacing-vertical) * 1);
+      border-left: 1px solid #353841;
+      a {
+        color: #d4d4d4;
+        &:hover {
+          color: var(--pico-primary);
+        }
+      }
+    }
+  }
+  summary {
+    list-style-type: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+}

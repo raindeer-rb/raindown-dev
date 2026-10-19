@@ -1,0 +1,46 @@
+#cards {
+  margin-bottom: 2rem;
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card {
+    header {
+      position: inherit;
+      z-index: inherit;
+    }
+    header i {
+      padding-right: 1rem;
+    }
+    &:nth-child(1) header i { color: rgb(1, 170, 255); }
+    &:nth-child(2) header i { color: #f96746; }
+    &:nth-child(3) header i { color: #18a902; }
+    &:nth-child(4) header i { color: #D700AB; }
+    &:nth-child(5) header i { color: #d63535; }
+    &:nth-child(6) header i { color: #eeae37; }
+
+    header mark {
+      float: right;
+      border-radius: 5px;
+      font-size: 1rem;
+      border-bottom: none;
+      padding: 0.25rem 0.5rem;
+    }
+
+    .content i {
+      display: block;
+      font-size: 4rem;
+      color: var(--pico-primary-background);
+      text-align: center;
+      padding: 0.5rem 0 1rem 0;
+    }
+    .content.mid {
+      justify-content: center;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

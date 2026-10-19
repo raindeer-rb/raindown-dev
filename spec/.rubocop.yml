@@ -1,0 +1,6 @@
+# More permissive coding practices for tests.
+
+inherit_from: ../.rubocop.yml
+
+Metrics/BlockLength:
+  Max: 500
