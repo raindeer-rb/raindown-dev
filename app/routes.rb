@@ -2,5 +2,4 @@
 
 Raindeer.router do
   get '/'
-  get '/gems'
 end

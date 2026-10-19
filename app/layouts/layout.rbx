@@ -43,7 +43,6 @@ class Layout < LowNode
             <nav id="main-menu">
               <ul>
                 <li><a href="/docs/getting-started"><i class="bi bi-book"></i>{"Docs"}</a></li>
-                <li><a href="/gems"><i class="bi bi-gem"></i>{"Gems"}</a></li>
                 <li><a href="https://github.com/raindeer-rb/raindown"><i class="bi bi-github"></i> {"Source"}</a></li>
               </ul>
             </nav>
