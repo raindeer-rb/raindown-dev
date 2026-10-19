@@ -34,7 +34,7 @@ class HomeNode < LowNode
       </div>
 
       <section id="examples">
-        <h2>{"Markdown or Raindown"}</h2>
+        <h2>{"Examples"}</h2>
         <p class="lead">{"The same example, as a Markdown file and as a Raindown file."}</p>
 
         <div class="pages">
@@ -52,7 +52,7 @@ class HomeNode < LowNode
 
       <section id="objective">
         <p class="kicker"><i class="bi bi-incognito"></i>{"Secret objective"}</p>
-        <p>{"To make programming fun again... AI is here but we can write the guard rails and get to code again... okay it's a templating language but we're so close! The tapping of the keys, the joy of syntax, the connections between files, it's all there, maybe we can live again?"}</p>
+        <p>{"To make programming fun again... AI is here but we can write the guard rails and specs and schemas and get to code again... okay it's a templating language but we're so close! The tapping of the keys, the joy of syntax, the connections between files, it's all there, maybe we can live again?"}</p>
       </section>
 
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
