@@ -73,10 +73,19 @@ ul.cons {
 
   background: linear-gradient(to bottom, rgb(6 7 10) 0%, rgb(19, 22.5, 30.5) 100%);
   height: 770px;
+  overflow: hidden;
 
   .section-pages & {
     height: 175px;
   }
+}
+
+/* 1px squares drawn by backdrop.js, crumbling to nothing at the bottom so they meet the page's background colour. */
+#background .backdrop {
+  display: block;
+  width: 100%;
+  height: 100%;
+  image-rendering: pixelated;
 }
 
 header, main, footer {

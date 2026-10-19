@@ -18,6 +18,7 @@ class Layout < LowNode
         <script src="/components/sidebar/sidebar.js" defer></script>
         <link rel="stylesheet" href="/components/toc/toc.css">
         <script src="/components/toc/toc.js" defer></script>
+        <script src="/components/backdrop/backdrop.js" defer></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +35,7 @@ class Layout < LowNode
         <title>{"Raindown"} - {title}</title>
       </head>
       <body class="{section}">
-        <div id="background"></div>
+        <div id="background"><canvas class="backdrop" aria-hidden="true"></canvas></div>
 
         <header>
           <div class="container">
