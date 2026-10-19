@@ -1,0 +1,87 @@
+/* The Markdown and Raindown examples, side by side as two pages with line numbers. */
+#examples {
+  margin: 3rem auto;
+  max-width: 1200px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .lead {
+    text-align: center;
+    color: #8891a5;
+    margin-bottom: 2rem;
+  }
+
+  .pages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 480px), 1fr));
+    gap: 1.5rem;
+    align-items: start;
+  }
+
+  .page {
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid #2c3142;
+    border-radius: 10px;
+    background: #1d1f21;
+    box-shadow: 0 12px 32px rgb(0 0 0 / 45%);
+  }
+
+  figcaption {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.25rem 1rem;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #2c3142;
+    background: #16181d;
+    font-size: 0.85rem;
+
+    .file {
+      font-family: 'DM Mono', monospace;
+      color: #e6e8ef;
+      i {
+        margin-right: 0.4rem;
+        color: #4a8cff;
+      }
+    }
+
+    .summary {
+      color: #8891a5;
+    }
+  }
+
+  pre[class*='language-'],
+  pre.line-numbers {
+    margin: 0;
+    border-radius: 0;
+    background: transparent;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  /* Pico pads code inside pre, which would push the code a line below its line numbers. */
+  code[class*='language-'] {
+    padding: 0;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  .line-numbers .line-numbers-rows {
+    border-right-color: #2c3142;
+  }
+
+  /* Raindown directives stand out from the Markdown around them. */
+  .token.directive,
+  .token.bare-directive {
+    color: #4a8cff;
+    font-weight: 500;
+  }
+}

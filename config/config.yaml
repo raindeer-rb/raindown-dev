@@ -11,3 +11,5 @@ content_types:
   jpg: image/jpeg
   png: image/png
   svg: image/svg+xml
+  md: text/markdown
+  rd: text/markdown
