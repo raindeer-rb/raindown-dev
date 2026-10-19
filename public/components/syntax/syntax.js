@@ -1,4 +1,6 @@
-// Highlights the home page's examples and card snippets, with Raindown directives on top of Prism's Markdown highlighting.
+// Highlights code blocks with Prism, with Raindown's directives and variables on top of its Markdown highlighting.
+// Raindown leaves code blocks unhighlighted for this, with highlight_code: false in .raindown/config.yml.
+
 // Directives between "<{" and "}>" stay on one line and outside inline code, so "`<{` and `}>`" isn't one.
 const directive = {
   pattern: /<\{[^`\n]*?\}>/,
@@ -28,17 +30,13 @@ Prism.languages.insertBefore('raindown', 'bold', {
   },
 });
 
-// Raindown already highlighted the cards' code on the server, so it's swapped for plain code that Prism highlights
-// the same way as the examples. Markdown snippets use the Raindown grammar, so bare directives like "toc:" stand out too.
-document.querySelectorAll('#cards pre[lang]').forEach((pre) => {
-  const language = pre.getAttribute('lang');
-  const code = document.createElement('code');
-  code.className = `language-${language === 'md' ? 'raindown' : language}`;
-  code.textContent = pre.textContent;
-  pre.removeAttribute('style');
-  pre.replaceChildren(code);
-});
+// The site's "md" code blocks show Raindown, so they get its grammar, bare directives included.
+Prism.languages.md = Prism.languages.raindown;
+Prism.languages.rd = Prism.languages.raindown;
+
+// Other languages, like Ruby or YAML, are loaded when a page has them.
+Prism.plugins.autoloader.languages_path = 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/';
 
 Prism.highlightAll();
-// Wrapped lines change height when the web font loads, so the line numbers are measured again.
+// Wrapped lines change height when the web font loads, so line numbers are measured again.
 document.fonts.ready.then(() => Prism.highlightAll());

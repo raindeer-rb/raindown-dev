@@ -1,0 +1,32 @@
+/* Code blocks, highlighted by Prism in syntax.js, as dark panels. */
+main pre,
+main pre[class*='language-'] {
+  margin: 0 0 1rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid #2c3142;
+  border-radius: 8px;
+  background: rgb(0 0 0 / 30%);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.8rem;
+  line-height: 1.6;
+
+  /* Pico pads code inside pre, on top of the panel's own padding. */
+  > code,
+  > code[class*='language-'] {
+    padding: 0;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+  }
+}
+
+/* Raindown directives stand out from the Markdown around them, and variables from the directives. */
+.token.directive,
+.token.bare-directive {
+  color: #4a8cff;
+  font-weight: 500;
+}
+
+.token.variable {
+  color: #ffb86c;
+}

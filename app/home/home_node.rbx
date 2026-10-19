@@ -55,14 +55,7 @@ class HomeNode < LowNode
         <p>{"To make programming fun again... AI is here but we can write the guard rails and specs and schemas and get to code again... okay it's a templating language but we're so close! The tapping of the keys, the joy of syntax, the connections between files, it's all there, maybe we can live again?"}</p>
       </section>
 
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css">
       <link rel="stylesheet" href="/components/examples/examples.css">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" data-manual defer></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markdown.min.js" defer></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-ruby.min.js" defer></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js" defer></script>
-      <script src="/components/examples/examples.js" defer></script>
     <{ :Layout }>
   end
 end

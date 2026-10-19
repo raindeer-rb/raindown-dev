@@ -1,0 +1,2 @@
+# Use Prism.js syntax highlighter instead for Markdown and Raindown files, as well as Ruby.
+highlight_code: false
