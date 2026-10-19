@@ -95,6 +95,11 @@ header, main, footer {
 
 header {
   background-color: #000;
+  text-shadow: 0 0 5px black;
+
+  .section-home & {
+    background-color: transparent;
+  }
 
   .container {
     display: flex;
