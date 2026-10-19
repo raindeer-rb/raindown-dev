@@ -22,7 +22,7 @@ class HomeNode < LowNode
 
         <span class="actions">
           <a href="/docs/getting-started" role="button"><i class="bi bi-book"></i>{"Getting Started"}</a>
-        </p>
+        </span>
 
         <{ Version }>
       </div>
@@ -50,12 +50,11 @@ class HomeNode < LowNode
         </div>
       </section>
 
-      <div class="teaser">
-        <div class="content">
-          <h2>{"Secret Objective... "}</h2>
-          <p>{"To make programming fun again... okay it's a templating language but we're so close! AI can't write the specs, only we humans can tell AI what to do. And to do that we get to code again... The roar of the tapping of the keys, the joy of syntax, the connections between files, it's all there, maybe we can live again?"}</p>
-        </div>
-      </div>
+      <section id="objective">
+        <p class="kicker"><i class="bi bi-incognito"></i>{"Secret objective"}</p>
+        <h2>{"Make programming fun again."}</h2>
+        <p>{"To make programming fun again... okay it's a templating language but we're so close! AI can't write the specs, only we humans can tell AI what to do. And to do that we get to code again... The roar of the tapping of the keys, the joy of syntax, the connections between files, it's all there, maybe we can live again?"}</p>
+      </section>
 
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css">
