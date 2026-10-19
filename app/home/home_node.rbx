@@ -18,7 +18,11 @@ class HomeNode < LowNode
       <div id="overview">
         <p>{"A Markdown superset for AI, APIs, Docs... and humans"}</p>
         <p><strong>{"Stay sane out there."}</strong></p>
-        <p class="actions"><a href="/docs/getting-started" role="button"><i class="bi bi-book"></i>{"Getting Started"}</a></p>
+
+        <span class="actions">
+          <a href="/docs/getting-started" role="button"><i class="bi bi-book"></i>{"Getting Started"}</a>
+        </p>
+
         <{ Version }>
       </div>
 
