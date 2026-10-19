@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-Raindown.router do
+Raindeer.router do
   get '/*'
 end

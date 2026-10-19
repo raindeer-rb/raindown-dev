@@ -4,7 +4,7 @@ class PageRenderer < LowNode
   observe '/*'
 
   def initialize(event:)
-    page = Raindown.pages.page(path: event.route.path) || return
+    page = Raindeer.pages.page(path: event.route.path) || return
 
     @html = page.html
     @title = page.metadata[:title]

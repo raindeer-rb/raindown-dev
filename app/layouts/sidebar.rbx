@@ -4,8 +4,8 @@ class Sidebar < LowNode
   Group = Data.define(:title, :links)
 
   def initialize
-    @nav_groups = ['Basics', 'Connections', 'Features', 'Advanced', 'Tooling'].map do |folder|
-      list = Raindown.pages.list(false, folder: folder.downcase.gsub(' ', '_'))
+    @nav_groups = ['Basics', 'Templating', 'Content', 'Tooling'].map do |folder|
+      list = Raindeer.pages.list(folder: folder.downcase.gsub(' ', '_'))
       Group.new(folder, list)
     end
   end

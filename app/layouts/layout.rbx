@@ -8,7 +8,7 @@ class Layout < LowNode
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
         <link rel="stylesheet" href="/style.css">
         <link rel="stylesheet" href="/components/home.css">
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦌</text></svg>">
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌧️</text></svg>">
 
         <!-- TODO: Precompile. -->
         <link rel="stylesheet" href="/components/alerts.css">
@@ -28,7 +28,7 @@ class Layout < LowNode
 
         <meta property="og:image" content="https://raindown.dev/assets/cover.png" />
         <meta property="og:title" content="Raindown" />
-        <meta property="og:description" content="An event-driven and compositional web framework that's easy to use 🦌" />
+        <meta property="og:description" content="A Markdown superset for AI and humans 🌧️" />
         <meta property="og:url" content="https://raindown.dev" />
         <meta property="og:type" content="website" />
       </head>
@@ -42,7 +42,7 @@ class Layout < LowNode
               <ul>
                 <li><a href="/docs/getting-started"><i class="bi bi-book"></i>{"Docs"}</a></li>
                 <li><a href="/gems"><i class="bi bi-gem"></i>{"Gems"}</a></li>
-                <li><a href="https://github.com/raindown-rb/raindown"><i class="bi bi-github"></i> {"Source"}</a></li>
+                <li><a href="https://github.com/raindeer-rb/raindown"><i class="bi bi-github"></i> {"Source"}</a></li>
               </ul>
             </nav>
           </div>
@@ -55,10 +55,11 @@ class Layout < LowNode
         <footer>
           <div class="container">
             <ul>
-              <li><a href="https://reddit.com/r/raindown">{"Reddit"}</a></li>
+              <li><a href="https://raindeer.dev">{"Raindeer"}</a></li>
+              <li><a href="https://reddit.com/r/raindeer">{"Reddit"}</a></li>
               <li><a href="https://discord.gg/UBex4JQgnX">{"Discord"}</a></li>
-              <li><a href="https://www.rubyforum.org/tag/raindown/97">{"Forum"}</a></li>
-              <li><a href="https://github.com/raindown-rb/raindown">{"GitHub"}</a></li>
+              <li><a href="https://www.rubyforum.org/tag/raindeer/97">{"Forum"}</a></li>
+              <li><a href="https://github.com/raindeer-rb/raindown">{"GitHub"}</a></li>
             </ul>
           </div>
         </footer>
