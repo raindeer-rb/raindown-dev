@@ -14,7 +14,6 @@ class Version < LowNode
   def render
     <ul id="releases">
       <li>v{@version}</li>
-      <li><a href="https://rubygems.org/gems/raindown">{"RubyGems"}</a></li>
       <li><a href="https://github.com/raindeer-rb/raindown/releases">{"Releases"}</a></li>
     </ul>
   end
