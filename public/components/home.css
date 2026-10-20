@@ -31,6 +31,11 @@
   .actions {
     display: block;
     margin-top: 1.5rem;
+
+    a[role=button] {
+      border: 4px solid #a7a5bd;
+      border-radius: 10px;
+    }
   }
   p {
     font-size: 1.25rem;
