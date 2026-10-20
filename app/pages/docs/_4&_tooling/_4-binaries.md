@@ -3,7 +3,9 @@ title: Binaries
 published: true
 ---
 
-Each [GitHub release](https://github.com/raindeer-rb/raindown/releases) has a standalone `raindown` executable for macOS, Linux (glibc and musl) and Windows, built with [Tebako](https://github.com/tamatebako/tebako). Ruby is bundled inside, so nothing else needs to be installed.
+Each [GitHub release](https://github.com/raindeer-rb/raindown/releases) has a standalone `raindown` executable for macOS, Linux (glibc and musl) and Windows, built with [Tebako](https://github.com/tamatebako/tebako). Ruby is bundled inside, so nothing else needs to be installed. Download links for the latest release are on the [Getting Started](/docs/getting-started) page.
+
+The musl binaries need `libgcc`, which bare Alpine doesn't include (`apk add libgcc`).
 
 ## Building your own
 
