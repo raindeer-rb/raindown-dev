@@ -7,8 +7,8 @@ class Examples
   Example = Data.define(:file, :language, :summary, :code)
 
   FILES = [
-    ['markdown.md', 'markdown', 'Markdown, with directives between <{ and }>'],
-    ['raindown.rd', 'raindown', 'Raindown, where directives can be bare']
+    ['raindown.rd', 'raindown', 'Raindown with `bare:` syntax'],
+    ['markdown.md', 'markdown', 'Markdown with `<{ antlers: }>` syntax']
   ].freeze
 
   def self.all
