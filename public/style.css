@@ -32,6 +32,11 @@ a i {
   vertical-align: middle;
 }
 
+/* Icons beside text, like the OS icons in the binaries table. */
+:is(p, li, td, th) > .bi {
+  margin-right: 0.25rem;
+}
+
 ul.icons {
   li {
     padding-left: 0.75rem;
