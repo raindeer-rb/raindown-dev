@@ -1,5 +1,6 @@
 ---
-title: VS Code
+title: VS Code extension
+menu: Extensions
 published: true
 ---
 
@@ -7,10 +8,11 @@ published: true
 
 The [VS Code extension](https://github.com/raindeer-rb/raindown/tree/main/vscode) highlights syntax and previews Raindown files with `--stdin`, rendering as you type. In Markdown files it highlights `<{ }>` directives and renders them in the built-in Markdown preview.
 
-|                                       | Markdown (`.md`)                       | Raindown (`.rd`, `.raindown`)                                   |
+|                                       | Markdown                        | Raindown                                    |
 | ------------------------------------- | -------------------------------------- | --------------------------------------------------------------- |
-| Highlights `<{ :toc }>` directives    | ✓                                      | ✓                                                               |
-| Highlights bare directives like `:toc` |                                       | ✓                                                               |
+| File extensions    | `.md`, `.markdown`                                      | `.rd`, `.raindown`                                                               |
+| Highlights `<{ :toc }>`    | ✓                                      | ✓                                                               |
+| Highlights `:toc` |                                       | ✓                                                               |
 | Preview                               | The built-in Markdown preview          | **Raindown: Open Preview** (`Cmd+Shift+V`)                      |
 
 Directives in code and comments aren't highlighted, matching what Raindown renders.

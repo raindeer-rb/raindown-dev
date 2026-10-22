@@ -5,11 +5,7 @@ published: true
 
 <{ :toc }>
 
-Raindown is a templating layer for static site generation and an annotation framework for Markdown files.
-
-It turns Markdown files into a harness for AI, where input is transformed into output an agent can read before it runs, saving you tokens and increasing human clarity. Markdown files are messy, and now we have structure that helps humans and machines.
-
-## Binary
+## Installation
 
 **Download a standalone binary** with Ruby bundled inside:
 
@@ -26,21 +22,28 @@ chmod +x raindown-*
 mv raindown-* /usr/local/bin/raindown
 ```
 
-See [Binaries](/docs/binaries) for more.
+**Alpine:**
+The musl binaries need `libgcc`, which bare Alpine doesn't include (`apk add libgcc`).
 
-## Ruby
+**Ruby:**
 
-**Or install the gem** if you have Ruby:
+If you have Ruby installed on your system then you can just run:
 ```shell
 gem install raindown
 ```
 
 ## Updating
 
-Download the binary again from the table above and replace the old one. Or if you installed the gem:
+Download the binary again from the table above and replace the old one.
+
+If you installed the gem via Ruby then do:
 ```shell
 gem update raindown
 ```
+
+## Setup
+
+Run `raindown init` in the root of your project to setup the `.raindown` folder.
 
 ## Usage
 
@@ -58,29 +61,9 @@ Add a table of contents to any Markdown file:
 ```md
 # Notes
 
-<{ :toc }>
-
-## Setup
+<{ toc: }>
 ```
 
-Or give the file the `.rd` extension and drop the delimiters:
+## VS Code extension
 
-```rd
-# Notes
-
-:toc
-
-## Setup
-```
-
-## Next steps
-
-<{ list: page folder: 'templating' }>
-- [{page.title}]({page.path})
-<{ :list }>
-<{ list: page folder: 'content' }>
-- [{page.title}]({page.path})
-<{ :list }>
-<{ list: page folder: 'tooling' }>
-- [{page.title}]({page.path})
-<{ :list }>
+Highlight Raindown syntax with the [VS Code extension](/docs/extensions).

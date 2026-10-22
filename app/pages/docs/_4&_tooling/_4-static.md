@@ -1,13 +1,13 @@
 ---
-title: Raindeer
+title: Static Site Generation
 published: true
 ---
 
 <{ :toc }>
 
-[Raindeer](https://raindeer.dev) renders its pages with Raindown, including the page you're reading.
+You can also use Raindown for static site generation. [Raindeer](https://raindeer.dev) uses Raindown to render its static site pages, including the page you're reading right now on this very website.
 
-## Pages
+## How it works
 
 Markdown and Raindown files under `app/pages` become pages, and their [folder tags](/docs/metadata) are removed from the URL:
 
@@ -25,16 +25,4 @@ When Raindeer renders a page, unlike the Raindown CLI:
 - Directives are always hidden in the HTML
 - A file's `path` metadata is its URL path, like `/docs/getting-started`
 
-## Pages in nodes
-
-List pages from a node with `Raindeer.pages`:
-
-```ruby
-class HomeNode < LowNode
-  observe '/'
-
-  def initialize(event:)
-    @cards = Raindeer.pages.list(folder: 'cards')
-  end
-end
-```
+*So try [Raindeer](https://raindeer.dev) today and get 50% off your first payment of FREE!*
