@@ -1,5 +1,6 @@
 ---
 title: Markdown superset
-summary: Every Markdown file is already a Raindown file. Add directives to it, or give it the .rd extension and write them bare.
 icon: markdown
 ---
+
+Use Raindown in your markdown or use the `.rd`/`.raindown` extension for the full syntax.
